@@ -32,8 +32,8 @@ There are two parts for SIFT:
 	3. Orientation assignment: mpute best orientation(s) for each keypoint region.
 - [Part II: compute feature descriptor](http://aishack.in/tutorials/sift-scale-invariant-feature-transform-features/)
 	4. Keypoint description: e local image gradients at selected scale and rotation to describe each keypoint region.
-
-SIFT computes the descriptor by taking a 16x16 block of pixels centered at a key point, dividing it into 4x4 cells, and computing an 8-bin histogram of gradient orientations within each cell(the length of each arrow corresponding to the sum of the gradient magnitudes near that direction within the region using "guassian weighted function"). This results in a 4*4*8=128-element vector, which is the descriptor.
+	
+	SIFT computes the descriptor by taking a 16x16 block of pixels centered at a key point, dividing it into 4x4 cells, and computing an 8-bin histogram of gradient orientations within each cell(the length of each arrow corresponding to the sum of the gradient magnitudes near that direction within the region using "guassian weighted function"). This results in a 4*4*8=128-element vector, which is the descriptor.
 
 
 
